@@ -27,7 +27,7 @@ ready to go. If you missed the instructions,
 You should now have a directory called `training-day`. This directory
 contains a Leiningen project we have lovingly hand-crafted just for
 you. It has unit tests for the exercises that will follow under the
-directory `test`. More about these in a minute. Lets first focus on
+directory `test`. More about these in a minute. Let's first focus on
 the stuff inside `src`.
 
 If you are using Light Table, now is a good time to Connect. If you
@@ -313,7 +313,7 @@ the operations works with only one operand.
 This behavior might seem odd, but here is the catch. The arithmetic
 operations above are, in fact, function calls. That is, `+` is
 actually a function (called `+`), as are `*` and `-`. Don't believe
-use? Write just `+` in the REPL. In Instarepl you see
+us? Write just `+` in the REPL. In Instarepl you see
 
 ~~~clojure
 + => fn
@@ -365,7 +365,7 @@ So far we've worked with expressions and called some existing
 functions. For structuring any kind of non-trivial programs, we will
 want to group code into our own *functions*.
 
-Lets start writing a function `(hello who)`, which returns an English
+Let's start writing a function `(hello who)`, which returns an English
 greeting for the user. Functions are created with `fn`. Write the
 following in you REPL and evaluate it.
 
@@ -394,7 +394,7 @@ expression will become the return value of this function. In general,
 the return value of a function will be the value of the last
 expression in the function.
 
-So we got a function. Lets call it!
+So we got a function. Let's call it!
 
 ~~~clojure
 ((fn [who] (str "Hello, " who "!")) "Jani") ;=> "Hello, Jani!"
@@ -537,13 +537,13 @@ The next section will tell you more about the function `use`.
 
 Code in Clojure projects is structured into namespaces defined in
 files. Usually each file corresponds to a one namespace identified by
-the file's path. For an example, the file `foo/bar/baz.clj` could
+the file's path. For example, the file `foo/bar/baz.clj` could
 contain the namespace `foo.bar.baz`. This is slightly different from
 Java, where directories correspond to namespaces (packages) and files
 under a directory usually contain a single class in the given package.
 
 The repository that you cloned at the end of the last chapter contains
-an Leiningen project. Inside the `src` directory are all the code
+a Leiningen project. Inside the `src` directory are all the code
 files of the project. The file `training_day.clj` should begin with
 the following.
 
@@ -564,7 +564,7 @@ hyphen, the corresponding file name should have an underscore.
 
 </alert>
 
-We are at cross roads. Choose to right set of instructions based on
+We are at cross roads. Choose the right set of instructions based on
 your REPL.
 
 <info>
