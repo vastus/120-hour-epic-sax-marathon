@@ -665,7 +665,7 @@ lengths of every item in `collection`.
 ~~~
 </exercise>
 
-Earlier, we briefly introduces the `fn` special form that can be used to create
+Earlier, we briefly introduced the `fn` special form that can be used to create
 functions. This is useful when you want a function that is only visible in the
 definition of another function. Quite often you want to use `let` to give name
 to this helper function.
@@ -759,7 +759,7 @@ Okey, so now that `map` has been gone over, let's see the definition of
   (map :name (:authors book)))
 
 (defn all-author-names [books]
-  (set (apply concat (map author-name books))))
+  (set (apply concat (map author-names books))))
 ~~~
 
 `author-names` returns the names of the authors of a single book.
@@ -858,7 +858,7 @@ Remember that you can use `str` to concatenate strings.
 Write the function `(monotonic? a-seq)` that returns `true` if `a-seq` is
 monotonic and otherwise `false`.
 
-A sequence is monotonic if is either inceasing or decreasing. In a decreasing
+A sequence is monotonic if it's either increasing or decreasing. In a decreasing
 sequence every element is at most as large as the previous one and in an
 increasing sequence every member is at least as large as the previous one.
 
@@ -1215,7 +1215,7 @@ Now that we can handle the case of multiple authors, we can move on to the
 string representation of a single book.
 
 <exercise>
-Write the function `(book->string book)` takes a single book as a parameter
+Write the function `(book->string book)` that takes a single book as a parameter
 and returns a string representation of `book` as follows:
 
 ~~~{.clojure}

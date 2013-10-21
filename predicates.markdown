@@ -52,7 +52,7 @@ defined a bunch of them and used them with `filter`.
 
 Let's write a function that returns a predicate. Suppose that I want to get
 all numbers greater than some limit from a sequence. I need a predicate for
-this grater than testing. Here's a function that returns such predicates.
+this greater than testing. Here's a function that returns such predicates.
 
 ~~~{.clojure}
 (defn greater-than [n]
@@ -162,7 +162,7 @@ and returns a predicate that takes a parameter `x` and
 
 ## Functions that both Take Functions as Parameters and Return Functions
 
-Sometimes you have a predicate that almost does what you want. For an example,
+Sometimes you have a predicate that almost does what you want. For example,
 suppose I want to filter all non-negative values from a sequence. There's
 `neg?` and `pos?`, but neither allow `0`. I could do something like this:
 
@@ -324,7 +324,7 @@ some awards.
 (def scanner-darkly {:title "A Scanner Darkly" :authors #{dick}})
 
 (def books #{cities, wild-seed, lord-of-light,
-             deus-irae, ysabel, scanner-darkly}])
+             deus-irae, ysabel, scanner-darkly})
 ~~~
 
 
