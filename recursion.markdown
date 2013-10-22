@@ -54,7 +54,7 @@ the existing higher-level functions do not quite work on it.
 
 Let's look at the function `cons`. It takes two parameters, a value and a
 sequence, and returns a new sequence with the value added to the front of the
-original sequence. For an example, to construct the sequence `(1 2 3 4)`, we
+original sequence. For example, to construct the sequence `(1 2 3 4)`, we
 could write:
 
 ~~~ {.clojure}
@@ -189,7 +189,7 @@ Hint: what is the base case here? How can you check if we're there?
 
 <exercise>
 
-Write the function `(max-element a-seq)` that computes returns the maximum
+Write the function `(max-element a-seq)` that returns the maximum
 element in `a-seq` or `nil` if `a-seq` is empty?
 
 You can use the function `(max a b)` that returns the greater of `a` and `b`.
@@ -243,7 +243,7 @@ definition for it:
 ~~~
 
 See how nicely it fits in the general template for linear recursion? Only
-deviation from it is the extra parameter `f`. It is function, that will become
+deviation from it is the extra parameter `f`. It is a function, that will become
 part of the operation that the recursion applies to the elements of the
 sequence. Here's the evaluation:
 
@@ -535,7 +535,7 @@ There are other recursive computations besides linear recursion. Another common
 type is _tree recursion_. Here _tree_ refers again to the shape of the
 computation. The natural use for tree recursion is with hierarchical data
 structures, which we will come back to later. Tree recursion can be illustrated
-with simple processes over numbers. For an example, let's look at how to
+with simple processes over numbers. For example, let's look at how to
 compute the following integer series:
 
 Let $f(n) = \begin{cases}
@@ -636,7 +636,7 @@ _Hint:_ You can use `reverse` and `map`.
 ### Passing state
 
 Sometimes when recursing over a structure we want to keep track of something.
-For an example, we might want to count how many elements we have processed, or
+For example, we might want to count how many elements we have processed, or
 how many `:D` keywords we have seen. How do we do this, in the absence of state
 in our language? (Or at least in the absence of instructions on how to use
 state on these pages!)
